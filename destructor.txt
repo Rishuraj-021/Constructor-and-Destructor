@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int count=0;
+class car{
+    public:
+    car(){
+        count++;
+        cout<<"no.ofobjects created:"<<count<<endl;
+    }
+    ~car(){
+        count--;
+        cout<<"no.of objects destroyed:"<<count<<endl;
+    }
+};
+
+int main() {
+   car kia,maruti,tata;{
+       car hyundai;
+   } 
+    return 0;
+}
