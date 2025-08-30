@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+  class Student{
+        int rollno;
+        char name[50];
+        double fee;
+       
+       
+        public:
+       
+        Student(int a,int b){
+            rollno =a;
+            fee=b;
+        }
+           
+       
+           
+   
+         void display(){
+           cout<<"rollno="<<rollno<<endl<<"fee="<<fee;
+         }
+  };
+
+    int main(){
+      Student aa(10,20);
+      aa.display();
+ 
+    return 0;
+}
