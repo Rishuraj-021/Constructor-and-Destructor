@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+    class Student{
+        int rollno;
+        char name[50];
+        double fee;
+
+        public:
+        Student()
+        {
+            cout<<"Enter the rollno."<<endl;
+            cin>>rollno;
+            cout<<"Enter the Name:"<<endl;
+            cin>>name;
+            cout<<"Enter the fee:"<<endl;
+            cin>>fee;
+        }
+    };
+
+    int main(){
+       
+        Student s;
+   
+ 
+    return 0;
+}         

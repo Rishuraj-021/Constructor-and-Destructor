@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class car {
+    int modelno;
+    string name;
+    double price;
+
+public:
+    car(int a, string b) {
+        modelno = a;
+        name = b;
+    }
+
+    car(const car &c) {
+        modelno = c.modelno;
+        name = c.name;
+        cout << "Copy constructor called!" << endl;
+    }
+
+    void display() {
+        cout << "Model No: " << modelno << endl;
+        cout << "Name: " << name << endl;
+    }
+};
+
+int main() {
+    car c1(245637, "Kia");
+    car c2 = c1;
+
+    cout << "Original object:" << endl;
+    c1.display();
+
+    cout << "Copied object:" << endl;
+    c2.display();
+
+    return 0;
+}

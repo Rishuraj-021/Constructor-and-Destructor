@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+class car{
+        int modelno;
+        char name[50];
+        double price;
+       
+       
+        public:
+       
+        car();
+       
+           
+         void display();
+    };
+      car::car(){
+       
+            cout<<"Enter the modelno."<<endl;
+            cin>>modelno;
+            cout<<"Enter the Name:"<<endl;
+            cin>>name;
+            cout<<"Enter the price:"<<endl;
+            cin>>price;
+        }
+         void car::display(){
+            cout<<endl<<modelno<<"\t"<<"car"<<"\t"<<price;
+         }
+   
+int main() {
+        car c;
+        c.display();
+
+    return 0;
+}
